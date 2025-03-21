@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website of Gavin Cockrem - Software Engineer specializing in web development">
+    <title>Gavin Cockrem - Software Engineer Portfolio</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-content">
+            <div class="logo" role="banner">gavinlc.co.uk</div>
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="#home" role="menuitem" aria-current="page">Home</a></li>
+                <li role="none"><a href="#about" role="menuitem">About</a></li>
+                <li role="none"><a href="#projects" role="menuitem">Projects</a></li>
+                <li role="none"><a href="#leadership" role="menuitem">Leadership</a></li>
+                <li role="none"><a href="#skills" role="menuitem">Skills</a></li>
+                <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <section id="home" class="hero" aria-labelledby="hero-heading">
+            <div class="hero-content">
+                <h1 id="hero-heading">Hi, I'm <span class="highlight">Gavin Cockrem</span></h1>
+                <h2>Software Engineer</h2>
+                <p>I build exceptional digital experiences that make life easier and more enjoyable.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary" aria-label="View my projects">View My Work</a>
+                    <a href="#contact" class="btn secondary" aria-label="Contact me">Contact Me</a>
+                    <a href="assets/cv.pdf" class="btn secondary" download aria-label="Download my CV">
+                        <i class="fas fa-download" aria-hidden="true"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate software engineer with expertise in building scalable web applications. With a strong foundation in computer science and years of experience in the industry, I specialize in creating efficient, user-friendly solutions to complex problems.</p>
+                    <div class="about-details">
+                        <div class="detail">
+                            <i class="fas fa-code" aria-hidden="true"></i>
+                            <span>20+ years experience</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-project-diagram" aria-hidden="true"></i>
+                            <span>Multiple award winning projects</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-users" aria-hidden="true"></i>
+                            <span>Many happy customers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Featured Projects</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <img src="assets/zookeeper.png" alt="Screenshot Zookeeper" loading="lazy">
+                    <h3>Mindtech Zookeeper</h3>
+                    <p>A desktop application for managing the Mindtech Application and assets.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Electron</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.mindtech.global/chameleontiers/" target="_blank" rel="noopener noreferrer" aria-label="View Zookeeper">
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="assets/dolphin.png" alt="Screenshot of Dolphin" loading="lazy">
+                    <h3>Mindtech Dolphin</h3>
+                    <p>A web application for managing and visualising the Mindtech dataset data.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Python Flask</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.mindtech.global/dolphin-platform/" target="_blank" rel="noopener noreferrer" aria-label="View Dolphin">
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="assets/apphead1.png" alt="Screenshot of Project 3" loading="lazy">
+                    <h3>Evergreen Life - Onboarding</h3>
+                    <p>New onboarding flow for users participating in the Evergreen Life study.</p>
+                    <div class="project-tech">
+                        <span>React Native</span>
+                        <span>Express</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.evergreen-life.co.uk/" target="_blank" rel="noopener noreferrer" aria-label="View Evergreen Life">
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="leadership" class="leadership" aria-labelledby="leadership-heading">
+            <h2 id="leadership-heading">Leadership & Mentoring</h2>
+            <div class="leadership-content">
+                <div class="leadership-text">
+                    <p>Throughout my career, I've developed strong leadership and mentoring capabilities, helping teams and individuals grow while delivering exceptional results.</p>
+                </div>
+                <div class="leadership-grid">
+                    <div class="leadership-category">
+                        <h3>Team Leadership</h3>
+                        <ul>
+                            <li>Led cross-functional teams of 5-10 developers</li>
+                            <li>Fostered collaboration and innovation</li>
+                            <li>Maintained high code quality standards</li>
+                            <li>Implemented agile methodologies</li>
+                            <li>Managed project timelines and deliverables</li>
+                        </ul>
+                    </div>
+                    <div class="leadership-category">
+                        <h3>Technical Mentoring</h3>
+                        <ul>
+                            <li>Mentored junior developers and graduates</li>
+                            <li>Provided guidance on best practices</li>
+                            <li>Conducted code reviews and feedback sessions</li>
+                            <li>Facilitated knowledge sharing workshops</li>
+                            <li>Supported career development planning</li>
+                        </ul>
+                    </div>
+                    <div class="leadership-category">
+                        <h3>Stakeholder Management</h3>
+                        <ul>
+                            <li>Communicated technical concepts effectively</li>
+                            <li>Managed client relationships</li>
+                            <li>Led stakeholder presentations</li>
+                            <li>Negotiated project requirements</li>
+                            <li>Ensured client satisfaction</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React.js</li>
+                        <li>Vue.js</li>
+                        <li>TypeScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>SQL</li>
+                        <li>RESTful APIs</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Others</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>Docker</li>
+                        <li>AWS</li>
+                        <li>CI/CD</li>
+                        <li>Agile/Scrum</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <p>gavin@gavinlc.co.uk</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <p>+44 07766662070</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <p>Sheffield, UK</p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form" action="send-email.php" method="POST" aria-labelledby="contact-heading">
+                    <div class="form-group">
+                        <label for="name" class="visually-hidden">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="visually-hidden">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="visually-hidden">Your Message</label>
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div id="form-message" class="form-message" role="alert" aria-live="polite"></div>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="social-links">
+            <a href="https://github.com/gavinlc" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">
+                <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/gavin-cockrem-062a1110/" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 Gavin Cockrem. All rights reserved.</p>
+    </footer>
+
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfIfPoqAAAAADLS8_aIumUPyJI73tufM-hZfevM"></script>
+    <script src="script.js"></script>
+
+    <script>
+    // Add reCAPTCHA token to form submission
+    document.getElementById('contact-form').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        try {
+            const token = await grecaptcha.execute('6LfIfPoqAAAAADLS8_aIumUPyJI73tufM-hZfevM', {action: 'submit'});
+            const formData = new FormData(this);
+            formData.append('recaptchaToken', token);
+            
+            // Rest of your form submission code...
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    });
+    </script>
+</body>
+</html> 
