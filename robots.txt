@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gavinlc.co.uk/sitemap.xml 
