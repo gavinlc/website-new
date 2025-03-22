@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Portfolio website with serverless contact form",
     "scripts": {
-        "build": "rm -rf dist && mkdir dist && cp -r index.html styles.css script.js assets dist/",
+        "build": "rm -rf dist && mkdir dist && cp -r index.html robots.txt sitemap.xml styles.css script.js assets dist/",
         "deploy": "npm run build && serverless deploy",
         "deploy:prod": "npm run build && serverless deploy --stage prod",
         "deploy:dev": "npm run build && serverless deploy --stage dev",
